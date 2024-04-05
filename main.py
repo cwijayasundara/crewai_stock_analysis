@@ -55,7 +55,9 @@ class FinancialCrew:
 
 
 if __name__ == "__main__":
-    st.subheader("Let AI agents research!", divider="rainbow", anchor=False)
+
+    st.subheader("AI Agents Conducting Market Research!", divider="rainbow", anchor=False)
+    st.image("images/agents.webp", width=400)
 
     with st.sidebar:
         st.header("👇 Select a company to analyze")
