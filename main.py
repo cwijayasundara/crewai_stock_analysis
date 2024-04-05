@@ -74,3 +74,7 @@ if submitted:
         status.update(label="✅ Ticker Analysis Ready!", state="complete", expanded=False)
     st.subheader("Here is your market analysis", anchor=False, divider="rainbow")
     st.markdown(result)
+
+    """ save the result to a file """
+    with open(f"reports/{option}.txt", "w") as file:
+        file.write(result)
